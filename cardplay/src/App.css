@@ -1,0 +1,10 @@
+
+.app-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 8ch auto;
+  column-gap: 16px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,7 @@
+.unit-pokemon {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: coral;
+  }
