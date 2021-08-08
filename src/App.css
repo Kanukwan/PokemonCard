@@ -2,6 +2,7 @@
 .app-grid {
   display: grid;
   justify-content: center;
+  margin-top: 50px;
 
   /* grid-template-columns: 10ch auto; */
   grid-template-columns: repeat(3, 200px);
