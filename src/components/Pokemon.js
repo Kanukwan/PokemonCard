@@ -1,12 +1,12 @@
 import './Pokemon.css';
 
 function Pokemon(props) {
-    const {title, thumbnailUrl} = props;
+    const { pokemon } = props;
 
     return (
         <div className="unit-pokemon">
-            <img src={thumbnailUrl}/>
-            <h4>{title}</h4>
+            <img src={pokemon.thumbnailUrl}/>
+            <h4>{pokemon.title}</h4>
         </div>
         
     );
