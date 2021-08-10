@@ -1,4 +1,36 @@
-.pokemon-post {
+.pokemon-post-bg {
+    background-color: rgba(0, 0, 0, 0.803);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.pokemon-post-content {
+    position: relative;
+    max-width: 200px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+
+}
+
+.pokemon-post-content img {
+    display: block;
+    max-width: 100%;
+    /* max-height: clac(100vh - 10px); */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pokemon-post-content h4 {
+    color: blanchedalmond;
+    text-align: center;
+}
+
+/* .pokemon-post {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -8,13 +40,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.pokemon-post-bg {
-    background-color: indianred;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}

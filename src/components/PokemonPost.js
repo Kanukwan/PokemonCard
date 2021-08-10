@@ -6,7 +6,7 @@ function PokemonPost() {
             <div className="pokemon-post-bg">
             <div className="pokemon-post-content">
                 <img src="/images/dex1-1.png"/>
-                <div>Dex1-1</div>
+                <h4>Dex1-1</h4>
             </div>
             </div>
         </div>
