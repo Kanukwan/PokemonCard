@@ -1,12 +1,14 @@
 import './PokemonPost.css'
 
-function PokemonPost() {
+function PokemonPost(props) {
+    const {pokemon} = props;
+
     return (
         <div className="pokemon-post">
             <div className="pokemon-post-bg">
             <div className="pokemon-post-content">
-                <img src="/images/dex1-1.png"/>
-                <h4>Dex1-1</h4>
+                <img src={pokemon.thumbnailUrl}/>
+                <h4>{pokemon.title}</h4>
             </div>
             </div>
         </div>

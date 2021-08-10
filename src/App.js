@@ -8,14 +8,14 @@ import PokemonPost from './components/PokemonPost';
 
 function App() {
 
-  const [selectedPokemon, setSelectedPokemon] = useState(pokemons[0])
+  const [selectedPokemon, setSelectedPokemon] = useState(pokemons[1])
   const pokemonElement = pokemons.map((pokemon, index) => {
     return <Pokemon key={index} pokemon={pokemon}/>;
   })
 
   let pokemonPost = null;
   if(!!selectedPokemon){
-      pokemonPost = <PokemonPost/>
+      pokemonPost = <PokemonPost pokemon={selectedPokemon}/>
   }
 
   return (
