@@ -10,17 +10,21 @@ function App() {
 
   const [selectedPokemon, setSelectedPokemon] = useState(null)
 
-  function onOpenPokemonClick(thePokemon) {
+  function onPokemonOpenClick(thePokemon) {
     setSelectedPokemon(thePokemon);
   }
 
+  function onPokemonCloseClick() {
+    setSelectedPokemon(null);
+  }
+
   const pokemonElement = pokemons.map((pokemon, index) => {
-    return <Pokemon key={index} pokemon={pokemon} onPokemonClick={onOpenPokemonClick}/>;
+    return <Pokemon key={index} pokemon={pokemon} onPokemonClick={onPokemonOpenClick}/>;
   })
 
   let pokemonPost = null;
   if(!!selectedPokemon){
-      pokemonPost = <PokemonPost pokemon={selectedPokemon}/>
+      pokemonPost = <PokemonPost pokemon={selectedPokemon} onBgClick={onPokemonCloseClick}/>
   }
 
   return (
