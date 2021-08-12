@@ -8,9 +8,14 @@ import PokemonPost from './components/PokemonPost';
 
 function App() {
 
-  const [selectedPokemon, setSelectedPokemon] = useState(pokemons[1])
+  const [selectedPokemon, setSelectedPokemon] = useState(null)
+
+  function onOpenPokemonClick(thePokemon) {
+    setSelectedPokemon(thePokemon);
+  }
+
   const pokemonElement = pokemons.map((pokemon, index) => {
-    return <Pokemon key={index} pokemon={pokemon}/>;
+    return <Pokemon key={index} pokemon={pokemon} onPokemonClick={onOpenPokemonClick}/>;
   })
 
   let pokemonPost = null;
